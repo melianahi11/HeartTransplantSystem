@@ -34,33 +34,29 @@ To use the Heart Transplant System, follow these steps:
 
 To add a new person to the system, use the `addPerson` method:
 
-```java
-HeartTransplant ht = new HeartTransplant();
+```HeartTransplant ht = new HeartTransplant();
 Person p = new Person(id, ethnicity, gender, age, cause, urgency, stateOfHealth);
-ht.addPerson(p, arrayIndex);
-Reading Data from Files
+ht.addPerson(p, arrayIndex);```
+
+### Reading Data from Files
 To read patient data or survivability rates from files, use the respective methods:
 
-java
-Copy code
-int numberOfLines = StdIn.readInt();
-int numberOfReadings = ht.readPersonsFromFile(numberOfLines);
-Retrieving Patient Information
+```int numberOfLines = StdIn.readInt();
+int numberOfReadings = ht.readPersonsFromFile(numberOfLines);```
+
+### Retrieving Patient Information
 You can retrieve patient information based on various criteria:
 
-java
-Copy code
-// Get patients with age above a certain threshold
+```// Get patients with age above a certain threshold
 Person[] elderlyPatients = ht.getPatientsWithAgeAbove(ageThreshold);
 
 // Get patients by state of health
 Person[] patientsInCriticalCondition = ht.getPatientsByStateOfHealth(criticalState);
 
 // Get patients by heart condition cause
-Person[] patientsWithSpecificCondition = ht.getPatientsByHeartConditionCause(conditionCause);
-Matching Patients for Heart Transplant
+Person[] patientsWithSpecificCondition = ht.getPatientsByHeartConditionCause(conditionCause);```
+
+### Matching Patients for Heart Transplant
 You can match a specified number of patients for heart transplant:
 
-java
-Copy code
-Person[] selectedPatients = ht.match(numberOfHearts);
+```Person[] selectedPatients = ht.match(numberOfHearts);```
