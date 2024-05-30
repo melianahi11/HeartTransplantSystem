@@ -34,9 +34,9 @@ To use the Heart Transplant System, follow these steps:
 
 To add a new person to the system, use the `addPerson` method:
 
-```HeartTransplant ht = new HeartTransplant();
+``` HeartTransplant ht = new HeartTransplant();
 Person p = new Person(id, ethnicity, gender, age, cause, urgency, stateOfHealth);
-ht.addPerson(p, arrayIndex);```
+ht.addPerson(p, arrayIndex); ```
 
 ### Reading Data from Files
 To read patient data or survivability rates from files, use the respective methods:
