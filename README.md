@@ -46,14 +46,14 @@ int numberOfReadings = ht.readPersonsFromFile(numberOfLines);`
 ### Retrieving Patient Information
 #### You can retrieve patient information based on various criteria:
 
-`// Get patients with age above a certain threshold
+// Get patients with age above a certain threshold
 Person[] elderlyPatients = ht.getPatientsWithAgeAbove(ageThreshold);
 
 // Get patients by state of health
 Person[] patientsInCriticalCondition = ht.getPatientsByStateOfHealth(criticalState);
 
 // Get patients by heart condition cause
-Person[] patientsWithSpecificCondition = ht.getPatientsByHeartConditionCause(conditionCause);`
+Person[] patientsWithSpecificCondition = ht.getPatientsByHeartConditionCause(conditionCause);
 
 ### Matching Patients for Heart Transplant
 #### You can match a specified number of patients for heart transplant:
